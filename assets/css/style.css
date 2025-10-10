@@ -1,0 +1,116 @@
+body {
+  font-family: "Helvetica Neue", "PingFang SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background: #f6f6f6;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0.5em 0 0;
+}
+
+header p {
+  margin: 0.2em 0 1em;
+  color: #666;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.work-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.work-item p {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+}
+
+footer {
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .work-item p {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .work-item {
+    border-radius: 8px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+}

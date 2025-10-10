@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pop & Boost - Project Details</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+  </header>
+
+  <main>
+    <h1>Pop & Boost</h1>
+    <p class="intro">
+      Pop & Boost is a casual puzzle game combining block placement and elimination. Players can collect blocks, trigger special effects, and unlock new stages.
+    </p>
+
+    <!-- 图片缩放 -->
+    <a href="#" class="work-item" onclick="openImage('../assets/images/popandboost/icon_1024.png'); return false;">
+      <img src="../assets/images/popandboost/icon_1024.png" alt="Pop & Boost" />
+    </a>
+
+    <div id="imageModal" class="image-modal" onclick="closeImage()">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" class="modal-content" src="" alt="Preview" />
+    </div>
+
+    <p><a href="../privacy/work1-privacy.html">View Privacy Policy →</a></p>
+  </main>
+
+  <footer>
+    <p><a href="mailto:zgamegz@hotmail.com">📧 zgamegz@hotmail.com</a></p>
+  </footer>
+
+  <script>
+  function openImage(src) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modalImg.src = src;
+    modal.classList.add('show');
+  }
+
+  function closeImage() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('show');
+  }
+  </script>
+
+</body>
+</html>
